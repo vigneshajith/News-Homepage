@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    
+
+    <title>News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/coder.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="sticky">
+        <div class="transparant">
+      <div class="white-space">
+        <div class="option">
+          <div class="close">
+            <img
+              class="close-menu"
+              src="assets/images/icon-menu-close.svg"
+              alt="close"
+            />
+          </div>
+        </div>
+        <div class="option-item">
+          <a class="navAlink" href="">Home</a>
+          <a class="navAlink" href="">New</a>
+          <a class="navAlink" href="">Popular</a>
+          <a class="navAlink" href="">Trending</a>
+          <a class="navAlink" href="">Categories</a>
+        </div>
+      </div>
+    </div>
+        <nav>
+          <img src="assets/images/logo.svg" alt="logo-of-W." />
+          <div class="menu">
+            <img class="open" src="assets/images/icon-menu.svg" alt="menu" />
+          </div>
+          <div class="navItem">
+            <a class="navAlink" href="">Home</a>
+            <a class="navAlink" href="">New</a>
+            <a class="navAlink" href="">Popular</a>
+            <a class="navAlink" href="">Trending</a>
+            <a class="navAlink" href="">Categories</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="top-section">
+        <section class="top-leftSection">
+          <picture>
+            <source
+              media="(max-width:600px)"
+              srcset="assets\images\image-web-3-mobile.jpg"
+            />
+            <img
+              class="mordenShapes"
+              src="assets/images/image-web-3-desktop.jpg"
+              alt="mordenShapes"
+            />
+          </picture>
+
+          <div class="inner-topsection">
+            <div class="bigText">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="para">
+              <p class="bpara grayish">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="redbtn">Read more</button>
+            </div>
+          </div>
+        </section>
+        <section class="top-rigthSection">
+          <div class="blackContainer">
+            <h2 class="bheading">New</h2>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p class="hr btext">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+            <h3>The Downsides of AI Artistry</h3>
+
+            <p class="hr btext">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p class="btext">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="bottomcontainer">
+        <div class="infoBox">
+          <div class="imgbox">
+            <img
+              class="sImg"
+              src="assets/images/image-retro-pcs.jpg"
+              alt="laptop"
+            />
+          </div>
+          <div class="Infotext">
+            <span class="graynum">01</span>
+            <h4 class="h4">Reviving Retro PCs</h4>
+            <p class="grayp">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="infoBox">
+          <div class="imgbox">
+            <img
+              class="sImg"
+              src="assets/images/image-top-laptops.jpg"
+              alt="laptop"
+            />
+          </div>
+          <div class="Infotext">
+            <span class="graynum">02</span>
+            <h4 class="h4">Top 10 Laptops of 2022</h4>
+            <p class="grayp">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="infoBox">
+          <div class="imgbox">
+            <img
+              class="sImg"
+              src="assets/images/image-gaming-growth.jpg"
+              alt="joy-stick"
+            />
+          </div>
+          <div class="Infotext">
+            <span class="graynum">03</span>
+            <h4 class="h4">The Growth of Gaming</h4>
+            <p class="grayp">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">VIGNESH</a>.
+      </div>
+    </footer>
+    <script>
+      var closeMenu = document.querySelector(".close-menu");
+      closeMenu.addEventListener("click", () => {
+        document.querySelector(".transparant").style.display = "none";
+      });
+      var open = document.querySelector(".open");
+      open.addEventListener("click", () => {
+        document.querySelector(".transparant").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
